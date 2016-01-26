@@ -1,0 +1,31 @@
+Delivered-To: naguernet@gmail.com
+Received: by 10.76.13.161 with SMTP id i1csp3790148oac;
+        Tue, 7 Apr 2015 06:20:39 -0700 (PDT)
+X-Received: by 10.140.98.148 with SMTP id o20mr22452225qge.99.1428412839101;
+        Tue, 07 Apr 2015 06:20:39 -0700 (PDT)
+Return-Path: <ba147@buenosaires.gob.ar>
+Received: from smtpgcba6.buenosaires.gov.ar (smtpgcba6.buenosaires.gov.ar. [200.16.89.93])
+        by mx.google.com with SMTP id d69si7032799qhc.129.2015.04.07.06.20.37
+        for <naguernet@gmail.com>;
+        Tue, 07 Apr 2015 06:20:39 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning ba147@buenosaires.gob.ar does not designate 200.16.89.93 as permitted sender) client-ip=200.16.89.93;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning ba147@buenosaires.gob.ar does not designate 200.16.89.93 as permitted sender) smtp.mail=ba147@buenosaires.gob.ar
+Received: from [192.168.252.28] ([192.168.252.28]:28376 "EHLO WINDOWS-2H52VOL"
+	rhost-flags-FAIL-FAIL-OK-FAIL) by mrlistas.buenosaires.gob.ar
+	with ESMTP id S9702020AbbDGMjr (ORCPT <rfc822;naguernet@gmail.com>);
+	Tue, 7 Apr 2015 09:39:47 -0300
+MIME-Version: 1.0
+From:	"BA147" <ba147@buenosaires.gob.ar>
+To:	naguernet@gmail.com
+Date:	7 Apr 2015 09:40:11 -0300
+Subject: =?utf-8?B?RWNvQmljaTogTnVldmFzIGVzdGFjaW9uZXMgYXV0b23DoXRp?=
+ =?utf-8?B?Y2Fz?=
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+Message-Id: <S9702020AbbDGMjr/20150407123949Z+2320230@mrlistas.buenosaires.gob.ar>
+
+PGh0bWw+PGJvZHk+PGltZyBzcmM9J2h0dHA6Ly9tb3ZpbGlkYWQuYnVlbm9zYWlyZXMu
+Z29iLmFyL21lam9yLWVuLWJpY2kvZmlsZXMvMjAxNS8wNC9jYXJ0YV8yLmpwZyc+PC9i
+b2R5PjwvaHRtbD4NCg==
+

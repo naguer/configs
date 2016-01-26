@@ -1,0 +1,23 @@
+set from = "naguernet@gmail.com"
+set realname = "Nahuel Hernandez"
+set imap_user = "naguernet@gmail.com"
+#set imap_pass = "XXXXX"
+set imap_pass = "tcdjgvqeysqiwgej"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Gmail]/Drafts"
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+set smtp_url = "smtps://naguernet@gmail.com@smtp.gmail.com:465/"
+#set smtp_url = "smtp://user@smtp.gmail.com:587/"
+#set smtp_pass = "XXXXX"
+set smtp_pass = "tcdjgvqeysqiwgej"
+set move = no 
+set imap_keepalive = 900
+set timeout=10    # mutt 'presses' (like) a key for you (while you're idle) 
+                  # each x sec to trigger the thing below
+set mail_check=5  # mutt checks for new mails on every keystroke
+                  # but not more often then once in 5 seconds
+set beep_new      # beep on new messages in the mailboxes
+set sort = reverse-date-received
