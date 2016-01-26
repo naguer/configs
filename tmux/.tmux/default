@@ -1,0 +1,34 @@
+selectp -t 0 # select the first (0) pane
+splitw -h -p 50 # split it into two halves
+
+selectp -t 1 # select the new, second (0) pane
+splitw -v -p 50 # split it into two halves
+splitw -v -p 50 # split it into two halves
+
+selectp -t 1 # select the new, second (1) pane
+splitw -v -p 50 # split it into two halves
+
+selectp -t 1 # select the new, second (1) pane
+splitw -h -p 40 # split it into two halves
+
+selectp -t 0 # select the first (0) pane
+splitw -v -p 50 # split it into two halves
+ 
+selectp -t 0 # go back to the first pane
+selectp -t 1 # select the first (0) pane
+splitw -v -p 50 # split it into two halves
+
+selectp -t 0 # select the first (0) pane
+splitw -v -p 50 # split it into two halves
+
+#selectp -t 4 htop
+#selectp -t 5 reloj
+#selectp -t 6 mutt
+#selectp -t 7 newsbeuter
+#selectp -t 8 finch
+
+send-keys -t 4 'htop' enter
+send-keys -t 5 'reloj' enter
+send-keys -t 6 'mutt' enter
+send-keys -t 7 'newsbeuter' enter
+send-keys -t 8 'finch' enter
