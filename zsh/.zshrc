@@ -5,8 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster" 
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster" 
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -79,14 +79,73 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/lib64/qt/bin:/usr/lib6
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
 unset TMUX
 export LANG=en_US
 
 # ALIAS
-alias cal='cal -m'
-alias reloj='tty-clock -c -r -B'
 alias vi='vim'
-alias docker_stopall='docker stop $(docker ps -a -q)' 
-alias docker_rmall='docker rm $(docker ps -a -q)' 
 alias s='ssh -l root'
-alias rasb='ssh naguer@naguer.servebeer.com'
+alias telegram='/home/naguer/Documents/apps/tg/bin/telegram-cli -k tg-server.pub -W' 
+alias carga='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"'
+
+# Solution Grep
+alias grep="/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
+
+# keyboard layout with ñáéíóú
+setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
+
+# term colors
+TERM='rxvt-unicode'
+COLORTERM='rxvt-unicode-256color'
+
+# ------------------------------------
+# Docker alias and function
+# ------------------------------------
+
+# Get latest container ID
+alias dl="docker ps -l -q"
+
+# Get container process
+alias dps="docker ps"
+
+# Get process included stop container
+alias dpa="docker ps -a"
+
+# Get images
+alias di="docker images"
+
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# Run deamonized container, e.g., $dkd base /bin/echo hello
+alias dkd="docker run -d -P"
+
+# Run interactive container, e.g., $dki base /bin/bash
+alias dki="docker run -i -t -P"
+
+# Execute interactive container, e.g., $dex base /bin/bash
+alias dex="docker exec -i -t"
+
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
+
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
+
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+
+# Remove all images
+dri() { docker rmi $(docker images -q); }
+
+# Dockerfile build, e.g., $dbu tcnksm/test 
+dbu() { docker build -t=$1 .; }
+
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# Bash into running container
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+DOCKER_OPTS="--insecure-registry 192.168.99.100:5000"
