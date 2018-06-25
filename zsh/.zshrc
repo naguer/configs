@@ -94,7 +94,7 @@ alias grep="/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
 # keyboard layout with ñáéíóú
-setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
+setxkbmap -rules evdev -model evdev -layout es -variant altgr-intl
 
 # term colors
 TERM='rxvt-unicode'
